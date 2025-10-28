@@ -1,0 +1,1 @@
+Coloque aqui imagens otimizadas. Recomenda-se uso de formatos modernos (webp, avif).

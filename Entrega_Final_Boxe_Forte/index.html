@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Boxe Forte — Entrega Final</title>
+  <meta name="description" content="Projeto Boxe Forte - entrega final com acessibilidade e otimização." />
+  <link rel="stylesheet" href="css/styles.min.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <header role="banner" class="site-header">
+    <div class="container">
+      <h1 id="site-title">Boxe Forte</h1>
+      <nav role="navigation" aria-label="Menu principal">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" role="main" tabindex="-1">
+    <section id="inicio" aria-labelledby="inicio-h1">
+      <h2 id="inicio-h1">Bem-vindo ao Boxe Forte</h2>
+      <p>Entrega final: layouts responsivos, acessibilidade, e otimização para produção.</p>
+      <button id="contrast-toggle" aria-pressed="false">Alta Contraste</button>
+    </section>
+
+    <section id="sobre" aria-labelledby="sobre-h2">
+      <h2 id="sobre-h2">Sobre o Projeto</h2>
+      <p>Descrição do projeto e práticas adotadas.</p>
+    </section>
+
+    <section id="contato" aria-labelledby="contato-h2">
+      <h2 id="contato-h2">Contato</h2>
+      <form id="contato-form" aria-label="Formulário de contato">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" required />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <button type="submit">Enviar</button>
+      </form>
+      <div aria-live="polite" id="form-msg" class="sr-only"></div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; Boxe Forte — Entrega Final</p>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js" defer></script>
+</body>
+</html>
